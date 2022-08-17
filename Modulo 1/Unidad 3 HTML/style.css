@@ -2,15 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: aliceblue;
 }
 body{
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
 }
 ul{ list-style: none;
 }
 .cv{
     margin:10px auto;
-    background-color:#6495ED;
+    background-color:#041c49;
     display: grid;
     width: 95vh;
     height: 95vh;
@@ -26,13 +27,14 @@ ul{ list-style: none;
 .tittle{
     color: aliceblue;
     grid-row :1/2;
-    grid-column: 1/4;
+    grid-column: 1/2;
     text-align: center;
+ font-size: 15px;
   
 }
 .cv .content{
     grid-column: 2/4;
-    grid-row: 2/4;
+    grid-row: 3/4;
     display: flex;
     flex-direction: column;
     justify-content:center ;
@@ -49,19 +51,22 @@ ul{ list-style: none;
     padding-left: 10px;
 }
 .img{
-    grid-column: 1/2;
-    grid-row: 2/4;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display:flex ;
+    align-content: center;
 }
 .img img{
-  
+    margin: auto;
     height:auto;
-    width: 80%;
+    width: 90%;
     border-radius: 20px;
     border: 3px solid black;
+   
 }
 .text{
-    grid-row:4/5;
-    grid-column: 1/4;
+    grid-row:3/5;
+    grid-column: 1/2;
     font-size: 16px;
 }
 .form{
@@ -86,14 +91,14 @@ form .inputs input{
 width: 100%;
 padding: 8px 0;
 text-align: center;
-
+color: black;
 }
 form .submit{
     margin:auto;
     width: 100%;
     display: inline-bock;
     padding: 10px 0;
-    
+    color: black;
    
 }
 form input{
