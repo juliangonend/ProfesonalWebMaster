@@ -1,0 +1,90 @@
+h2{
+    margin-left: 50%;
+}
+/* Primer ejecisio 1 */
+.ejercisio1{
+    margin-left: 90px;
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    height: 40vw;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+.cajita{
+    border: 3px solid black;
+    position: relative;
+    width: 33%;
+    height: 33%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+
+}
+.rojo{
+    background-color: red;
+}
+.azul{
+    background-color: rgb(9, 121, 27);
+}
+.verde{
+    background-color: rgb(19, 6, 88);
+}
+/* segundo ejecisio 2 */
+.ejercisio2{
+    margin-left: 90px;
+    background-color: rgb(246, 250, 36);
+    width: 80%;
+    height: 40vw;
+    left: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.rojo{
+    background-color: red;
+}
+.azul{
+    background-color: rgb(9, 121, 27);
+}
+.verde{
+    background-color: rgb(19, 6, 88);
+}
+/* tercera ejecisio 3*/
+.ejercisio3{
+    margin-left: 90px;
+    background-color: rgb(255, 83, 141);
+    width: 80%;
+    height: 40vw;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.rojo{
+    background-color: red;
+}
+.azul{
+    background-color: rgb(9, 121, 27);
+}
+.verde{
+    background-color: rgb(19, 6, 88);
+}
+.cajita3{
+    border: 3px solid black;
+    position: relative;
+    width: 20%;
+    height: 33%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+
+}
