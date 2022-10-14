@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let recorrido = prompt("Ingrese cuanto quiere recorrer y se le recomendara el medio de transporte adecuado");
+    //     let recorrido= parseInt(recorrido)
+    //     if(recorrido<=1000){
+    //         console.log("se recomienda ir a pie")
+    //     }
+    //    else  if(recorrido>1000 && recorrido<=10000){
+    //         console.log("se recomienda ir en bicicleta")
+    //     }
+    //    else  if(recorrido>10000 && recorrido<=30000){
+    //         console.log("se recomienda ir en colectivo")
+    //     }
+    //    else  if(recorrido>30000 && recorrido<=1000000){
+    //         console.log("se recomienda ir en auto")
+    //     }
+    //     else{
+    //         console.log("se recomienda ir en avion")}
+        
+
+
+const numeros=["","","","",""]
+let numeroMayor=numeros[0]
+for (let i = 0; i < numeros.length; i++) {
+    num =prompt(` Ingrese el numero de la posicion ${i+1} y devolveremos el mayor del array`)
+    num=parseInt(num)
+    numeros[i]=num;
+   if (numeros[i]> numeroMayor){
+    numeroMayor=numeros[i]
+
+   }
+
+}
+
+console.log(`El Numero mayor es ${numeroMayor} 
+`)
+
+
+ </script>
+</body>
+</html>
