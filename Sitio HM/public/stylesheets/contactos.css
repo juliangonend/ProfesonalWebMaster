@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: aliceblue;
+}
+.line{
+    background-color: #0b2b70;
+    width: 25rem;
+    height: 4px;
+    border-radius: 20px;
+}
+.ctn{
+    
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    left: auto;
+   
+    font-size: 20px;
+    text-align: left;
+    transition: .5s;
+    
+}
+.ctn:hover{
+    transform: scale(1.2);
+    font-size: 22px;
+
+}
+
+/* nav */
+.activo{
+    background-color: #0b2b70;
+   font-size: 16px;
+   padding: 2px 6px;
+    width: auto;
+    height: 22px;
+    text-align: center;
+    border-radius:10px ;
+
+}
+.activo a{
+    color: white;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    max-height: 8vh;
+}
+nav h2{
+    margin:auto 0 ;
+    padding-left: 5px;
+    width: 20%;
+    color:#0b2b70;
+    
+}
+.nav-menu{
+    width: 45%;
+    height: 60px;
+}
+.nav-menu ul{
+    display: flex;
+    list-style: none;
+   justify-content: space-around;
+   padding: 20px;
+
+}
+.nav-menu .desactivado a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #0b2b70;
+    font-weight: bold;
+    transition: .5s;
+}
+.nav-menu .desactivado a:hover{
+ 
+    color: black;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transform: 1.1;
+}
+/* main */
+main{padding: 2px;
+    display: flex;
+    background-color: #22418A;
+    height: 90vh;
+    justify-content: space-between;
+}
+.photo{
+    width: 50%;
+    overflow: hidden;
+}
+.photo img{
+    width: 150%;
+    position:center;
+    
+}
+.contactanos{
+    width: 40%;
+    gap: 24px;
+    padding:30px;
+
+}
+.contactanos h2{
+    padding-left: 20px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.formulario p{
+  display: flex;
+    padding: 20px;
+    gap: 10px;
+}
+.formulario p label{
+    color: aliceblue;
+    font-size: 20px;
+    min-width: 90px;
+    display: flex;
+    align-items: center;
+}
+.formulario textarea{
+    width:300px ;
+    height: 150px;
+    resize: none;
+    border-radius: 4px;
+   
+}
+.formulario p input{
+  
+    width:300px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+}
+.formulario p input[type="submit"]{
+  margin-left: 6rem;
+}
+
+/* footer */
+footer{
+    background-color: #061946;
+    width: 100%;
+
+}
+.footer-list{
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+   justify-content: space-around;
+    color: white;
+
+}
+.footer-card{
+    padding: 30px 0;
+}
+.footer-card h3{
+    text-align: center;
+    color: #484848;
+}
+.footer-card ul{
+   list-style: none;
+}
+.footer-card li{
+    padding: 15px 0;
+    text-align: center;
+}
+.footer-card a{ 
+color: #484848;
+font-size: 15px;
+}
+.footer-card a:hover , .footer-card h3:hover{
+    border-bottom: 1px solid white;
+    color:aliceblue;
+
+}
+footer p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

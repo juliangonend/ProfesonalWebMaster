@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* overflow-x: hidden; */
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: aliceblue;
+}
+.line{
+    background-color: #0b2b70;
+    width: 25rem;
+    height: 4px;
+    border-radius: 20px;
+}
+.ctn{
+
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    left: auto;
+    font-size: 20px;
+    text-align: left;
+    transition: .5s;
+    
+}
+.ctn:hover{
+    transform: 1.2;
+    font-size: 22px;
+
+}
+
+/* nav */
+.activo{
+    background-color: #0b2b70;
+   font-size: 16px;
+   padding: 2px 6px;
+    width: auto;
+    height: 22px;
+    text-align: center;
+    border-radius:10px ;
+
+}
+.activo a{
+    color: white;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    max-height: 8vh;
+}
+nav h2{
+    margin:auto 0 ;
+    padding-left: 5px;
+    width: 20%;
+    color:#0b2b70;
+    
+}
+.nav-menu{
+    width: 45%;
+    height: 60px;
+}
+.nav-menu ul{
+    display: flex;
+    list-style: none;
+   justify-content: space-around;
+   padding: 20px;
+
+}
+.nav-menu .desactivado a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #0b2b70;
+    font-weight: bold;
+    transition: .5s;
+}
+.nav-menu .desactivado a:hover{
+ 
+    color: black;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transform: 1.1;
+}
+/* header */
+.header-content .ctn{
+    margin: 50px 0;
+    background-color: aliceblue;
+    color: #22418A;
+    font-weight: 600;
+}
+header{
+    padding:30px 0 ;
+    background-color: #22418A;
+   width: 100%;
+   height: 90vh;
+   display: flex;
+  justify-content: space-between;
+   
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    width: 40%;
+    margin-left: 45px;
+    /* margin-top:30px; */
+
+}
+.header-content h1{
+    color: aliceblue;
+    font-size: 50px;
+    margin:20px 0;
+
+}
+.header-content p{
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+header .photos{
+    width: 55%;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2%;
+
+}
+header .photos img{
+    padding: 10px 5px;
+    max-width: 300px;
+    height: auto;
+}
+img{
+    transition: .5s;
+}
+ img:hover{
+    transform: scale(1.15);
+ }
+/* fin header */
+/* main */
+main{
+    padding: 20px 0;
+}
+.servicios-card{
+    width: 100%;
+    
+}
+.servicios-card h2{
+    font-size: 40px;
+    text-align: center;
+    color: #061946;
+    padding: 5px;
+    
+}
+.tipos-card{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    background-color: #061946;
+    margin: 12px 0 ;
+    padding:0px 5px;
+}
+.tipos-card .content{
+    /* width: 50%; */
+    padding-left: 20px;
+    text-align: left;
+}
+.content h3{
+    color: aliceblue;
+    font-size: 30px;
+    padding: 20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+} 
+.content h4{
+    font-size: 25px;
+    color: antiquewhite;
+   
+}
+.content p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: antiquewhite;
+}
+.tipos-card .img{
+    width: 40%;
+    padding: 10px 0;
+    overflow: hidden;
+  
+}
+.img img{
+    border-radius: 4px;
+    max-width: 350px;
+}
+.tipos-card:nth-child(even){
+    flex-direction: row-reverse;
+    background-color: #22418A;
+}
+/* footer */
+footer{
+    background-color: #061946;
+    width: 100%;
+
+}
+.footer-list{
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+   justify-content: space-around;
+    color: white;
+
+}
+.footer-card{
+    padding: 30px 0;
+}
+.footer-card h3{
+    text-align: center;
+    color: #484848;
+}
+.footer-card li{
+    padding: 15px 0;
+    text-align: center;
+}
+.footer-card a{ 
+color: #484848;
+font-size: 15px;
+}
+.footer-card a:hover , .footer-card h3:hover{
+    border-bottom: 1px solid white;
+    color:aliceblue;
+
+}
+footer p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

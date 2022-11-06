@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hockey Management{{title}}</title>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Silkscreen&display=swap" rel="stylesheet">
+  <body>
+      <!-- Navegacion -->
+    <nav>
+        <h2>Hockey Management</h2>
+       
+        <div class="nav-menu">
+            <ul>
+                <li class="{{#if isHome}}activo{{/if}}"><a href="/" >Inicio</a></li>
+                <li class="{{#if isQuienessomos}}activo{{/if}}"><a href="/quienessomos">Quienes Somos?</a></li>
+                <li class="{{#if isServicios}}activo{{/if}}"><a href="/servicios">Servicios</a></li>
+                <li class="{{#if isContactos}}activo{{/if}}"><a href="/contactos">Contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+       <!-- footer -->
+   
+    {{{body}}}
+     <footer>
+        <div class="footer-list">
+            <div class="footer-card">
+                <h3>Contactos</h3>
+                <ul>
+                    <li>  <a href=""><i class="fa-brands fa-instagram"></i> @hockeymanagement</a> </li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i> Argentina </a></li>
+                    <li> <a href=""><i class="fa-brands fa-whatsapp"> </i> Chile</a></li>
+                </ul>
+              
+            </div>
+        
+            <div class="footer-card">
+                <h3>Personalizados</h3>
+                <ul>
+                    <li>  <a href="">Jugadores</a> </li>
+                    <li><a href="">Arqueros</a></li>
+                    <li> <a href="">Mamis</a></li>
+                    <li><a href="">Psicomotricidad</a></li>
+            
+                </ul>
+              
+            </div>
+            <div class="footer-card">
+                <h3>Asesoramientos</h3>
+                <ul>
+                    <li>  <a href="">Servicio que ofrecemos </a> </li>
+                  
+                </ul>
+                
+              
+            </div>
+            <div class="footer-card">
+                <h3>Quienes Somos ?</h3>
+                <ul>
+                    <li>  <a href="">Jose Gonzalez</a> </li>
+                    <li><a href="">Cristian Gonzalez</a></li>
+            
+                </ul>
+              
+            </div>
+            <div class="footer-card">
+                <h3>Sedes</h3>
+                <ul>
+                    <li>  <a href="">Sede Chile</a> </li>
+                    <li><a href="">Sede Argentina</a></li>
+            
+                </ul>
+              
+            </div>
+        </div>
+
+        
+        <p>  Hockey Management &copy; 2022</p>
+
+    </footer>
+  </body>
+</html>
