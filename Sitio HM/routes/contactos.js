@@ -7,35 +7,29 @@ router.get('/', function(req, res, next) {
     isContactos:true   } );
   });
   
+  var  nodemailer= requiere("nodemailer");
+  router.post("/",async(req,res,next)=>{
 
-// var nodemailer=requiere("nodemailer");
-// router.post('/',async (req,res,next)=>{
-
-
-//     var nombre=req.body.nombre;
-//     var email=req.body.email;
-//     var tel=req.body.tel;
-//     var mensaje=req.body.mensaje;
+    var nombre=req.body.nombre;
+    var email=req.body.email;
+    var tel=req.body.tel;
+    var mensaje=req.body.mensaje;
+    var obj= {
+      to:"gonzalezjulian501@gmail.com",
+      subject:"Contacto Web",
+      html:nombre + 'se contacto a traves de la web y quiere más información a este correo: '+email+ ". <br> Además , hizo este comentario:"+ mensaje+".<br> Su tel es :"+ tel
+    }
+    var transport = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: process.env.SMTP_PORT,
+      auth:{
+        user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PAST,
+    }
     
-//     var obj={
-//       to:'gonzalezjulian501@gmail.com',
-//       subject: 'CONTACTO WEB',
-//       html: nombre + " se contacto atraves de la web y quiere saber mas información a este correo :"+ email + ". <br> Ademas , se hizo el comentario: "+ mensaje + "  .<br>Su tel es :" + tel
-
-//     }
-  
-//   var transport = nodemailer.createTransport({
-//     host: process.env.SMTP-HOST,
-//     port: process.env.SMTP-PORT,
-//     auth: {
-//       user: process.env.SMTP-USER,
-//       pass: process.env.SMTP-PASS
-//     }
-//    });
-//   var info = await transport.sendMail(obj);
-
-//   res.render('contacto',{
-//     message:'Mensaje envado correctamente'
-//   });
-
- module.exports = router;
+  });
+  res.render=('contacto',{
+    message:'Mensaje enviado correctamente'
+  });
+});
+module.exports = router;
