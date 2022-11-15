@@ -144,6 +144,11 @@ main{padding: 2px;
 .formulario p input[type="submit"]{
   margin-left: 6rem;
 }
+.mensaje{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
 
 /* footer */
 footer{

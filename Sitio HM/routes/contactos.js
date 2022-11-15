@@ -22,7 +22,7 @@ router.get('/', function(req, res, next) {
       subject:"Contacto Web",
       html:nombre + ' se contacto a traves de la web y quiere más información a este correo: '+email+ ". <br> Además , hizo este comentario: "+ mensaje+".<br> Su tel es :"+ tel
     }
-var transporter = nodemailer.createTransport({
+ var transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
   port: process.env.SMTP_PORT,
   auth: {
@@ -30,10 +30,13 @@ var transporter = nodemailer.createTransport({
     pass: process.env.SMTP_PASS,
   }
 });
-var info= await transporter.sendMail(obj);
-  res.render=('contactos',{
-    isContactos:true,
-    message:'Mensaje enviado correctamente'
-  });
+  var info= await transporter.sendMail(obj);
+
+ 
+  res.render('contactos', {
+    isContactos:true   ,
+    message:'mensaje enviado correctamente'
+  });//contactos.hbs
+  ;
 });
 module.exports = router;
