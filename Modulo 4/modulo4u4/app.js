@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
-  secret:'1joi2jio3jou4',
+  secret:'1joi2jio3jou41joi2jio3jou4',
   resave:false,
   saveUninitialized:true
 }));
