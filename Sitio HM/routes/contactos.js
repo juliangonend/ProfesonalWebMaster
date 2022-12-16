@@ -11,16 +11,17 @@ router.get('/', function(req, res, next) {
   
  
   router.post("/", async(req,res,next)=> {
-// console.log(req.body);
+console.log(req.body);
     var nombre= req.body.nombre;
     var email= req.body.email;
     var tel= req.body.tel;
     var mensaje= req.body.mensaje;
+    var sede= req.body.sede;
 
     var obj= {
       to:"gonzalezjulian501@gmail.com",
       subject:"Contacto Web",
-      html:nombre + ' se contacto a traves de la web y quiere más información a este correo: '+email+ ". <br> Además , hizo este comentario: "+ mensaje+".<br> Su tel es :"+ tel
+      html:nombre + ' se contacto a traves de la web y quiere más información a este correo: '+email+ ". <br> Además , hizo este comentario: "+ mensaje+".<br> Su tel es :"+ tel+ sede
     }
  var transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
