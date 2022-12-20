@@ -15,6 +15,7 @@ var usersRouter = require('./routes/users');
 var contactosRouter = require('./routes/contactos');
 var quienessomosRouter = require('./routes/quienessomos');
 var serviciosRouter = require('./routes/servicios');
+var novedadesRouter = require('./routes/novedades');
 var LoginRouter= require('./routes/admin/login')
 var adminRouter= require('./routes/admin/novedades')
 
@@ -55,6 +56,7 @@ app.use('/users', usersRouter);
 app.use('/contactos',contactosRouter);
 app.use('/quienessomos',quienessomosRouter);
 app.use('/servicios', serviciosRouter);
+app.use('/novedades', novedadesRouter);
 app.use('/admin/login', LoginRouter)
 app.use('/admin/novedades',secured, adminRouter)
 
