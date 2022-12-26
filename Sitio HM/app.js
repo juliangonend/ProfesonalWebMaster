@@ -16,7 +16,7 @@ var contactosRouter = require('./routes/contactos');
 var quienessomosRouter = require('./routes/quienessomos');
 var serviciosRouter = require('./routes/servicios');
 var novedadesRouter = require('./routes/novedades');
-var LoginRouter= require('./routes/admin/login')
+var LoginRouter= require('./routes/admin/login');
 var adminRouter= require('./routes/admin/novedades')
 
 var app = express();

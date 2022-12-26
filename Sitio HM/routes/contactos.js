@@ -21,7 +21,7 @@ console.log(req.body);
     var obj= {
       to:"gonzalezjulian501@gmail.com",
       subject:"Contacto Web",
-      html:nombre + ' se contacto a traves de la web y quiere más información a este correo: '+email+ ". <br> Además , hizo este comentario: "+ mensaje+".<br> Su tel es :"+ tel+ sede
+      html:nombre + ' se contacto a traves de la web y quiere más información a este correo: '+email+ ". <br> Además , hizo este comentario: "+ mensaje+".<br> Su tel es :"+ tel+"<br> y es de la sede "+ sede
     }
  var transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,

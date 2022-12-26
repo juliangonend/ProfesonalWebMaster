@@ -1,0 +1,25 @@
+ <div class="container">
+    <div class="row">
+        <div class="col-5 offset-3" style="margin-top: 30px; font-size:18px " >
+          <form method="post" action="/admin/novedades/agregar">
+                 <div class="mb-6">
+                <label for="exampleFormControlInput1" class="form-label">Título</label>
+                <input type="text" class="form-control" name="titulo" placeholder="titulo de la novedad">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Subtítulo</label>
+                    <input type="text" class="form-control"  name="subtitulo" placeholder="titulo de la novedad">
+             </div>
+                <div class="mb-5">
+                    <label for="exampleFormControlTextarea1" class="form-label">Cuerpo</label>
+                 <textarea class="form-control" name="cuerpo" rows="3"></textarea>
+                </div>
+                <div class="col-5 text-end">
+                        <button type="submit" class="btn btn-success">Nuevo</button>
+                 </div>
+                 {{#if error}}
+                 <h5>{{message}}</h5>
+                 {{/if}}
+            </form>
+     </div>
+ </div> 
